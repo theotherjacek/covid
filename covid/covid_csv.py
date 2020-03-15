@@ -3,7 +3,7 @@
 import sys
 from collections import defaultdict
 from io import StringIO
-from typing import List, Dict
+from typing import List
 import requests
 import csv
 from colorama import Fore, Style
@@ -50,6 +50,7 @@ if __name__ == '__main__':
     deaths_results = accumulate(deaths, countries, deaths_country_index)
     recovered_results = accumulate(recovered, countries, recovered_country_index)
 
+    print()
     for country in confirmed_results.keys():
         print(Style.BRIGHT + Fore.GREEN, country, Style.RESET_ALL)
         print(
@@ -73,3 +74,4 @@ if __name__ == '__main__':
             ' ' * (SPACING - len('Recovered')),
             recovered_results[country]
         )
+        print()
