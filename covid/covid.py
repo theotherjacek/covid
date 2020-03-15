@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 from typing import List, Dict
 import requests
