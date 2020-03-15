@@ -18,7 +18,7 @@ def print_country_stats(country_data: Dict):
 
 
 def parse_args(argv: List[str]):
-    countries = [c.strip() for c in ''.join(argv[1:]).split(',') if c]
+    countries = [c.strip() for c in ' '.join(argv[1:]).split(',') if c]
     if not len(countries):
         return ["poland", "us", "china"]
 
