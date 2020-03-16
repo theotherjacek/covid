@@ -1,7 +1,7 @@
 ## Covid
 
 Simple cli tool to fetch latest covid-19 stats.
-Uses data endpoints of https://coronavirus.jhu.edu/map.html.
+Uses data provided by Johns Hopkins School of Engineering: https://github.com/CSSEGISandData/COVID-19.
 
 ### Install deps
 
