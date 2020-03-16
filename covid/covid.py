@@ -62,6 +62,13 @@ if __name__ == '__main__':
         )
         print(
             Style.BRIGHT,
+            'Active:',
+            Style.RESET_ALL,
+            ' ' * (SPACING - len('Active')),
+            confirmed_results[country] - deaths_results[country] - recovered_results[country]
+        )
+        print(
+            Style.BRIGHT,
             'Deaths:',
             Style.RESET_ALL,
             ' ' * (SPACING - len('Deaths')),
